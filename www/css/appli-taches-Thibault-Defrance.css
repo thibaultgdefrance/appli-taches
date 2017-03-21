@@ -1,9 +1,6 @@
 body {
   overflow: hidden; }
 
-overflow {
-  opacity: 0%; }
-
 .titre {
   height: 150px;
   background-image: url(../img/projet-IT.jpg);
@@ -28,9 +25,7 @@ overflow {
   height: 30px;
   font-size: 20px;
   border: solid 1px #3851D0;
-  border-radius: 5px;
-  bottom: 0px;
-  right: 0px; }
+  border-radius: 5px; }
 
 .corps {
   padding-top: 3%; }
