@@ -1,0 +1,45 @@
+body {
+  overflow: hidden; }
+
+.titre {
+  height: 150px;
+  background-image: url(../img/projet-IT.jpg);
+  background-attachment: fixed;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  font-family: "Baloo Bhaina", cursive; }
+
+.bar {
+  height: 20px;
+  background-color: #3851D0; }
+
+.bouton {
+  height: 20px;
+  font-family: "Baloo Bhaina", cursive;
+  color: white; }
+
+.bouton:hover {
+  background-color: white;
+  color: #3851D0;
+  height: 30px;
+  font-size: 20px;
+  border: solid 1px #3851D0;
+  border-radius: 5px; }
+
+.new {
+  height: 400px;
+  margin-top: 5%;
+  background-color: #B8BFE2;
+  border-radius: 10px; }
+
+.vert {
+  color: green; }
+
+.orange {
+  color: orange; }
+
+.rouge {
+  color: red; }
+
+/*# sourceMappingURL=new.css.map */
