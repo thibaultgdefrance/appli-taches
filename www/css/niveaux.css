@@ -1,0 +1,64 @@
+body {
+  overflow: hidden; }
+
+.titre {
+  height: 150px;
+  background-image: url(../img/projet-IT.jpg);
+  background-attachment: fixed;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  font-family: "Baloo Bhaina", cursive; }
+
+.bar {
+  height: 20px;
+  background-color: #3851D0; }
+
+.bouton {
+  height: 20px;
+  font-family: "Baloo Bhaina", cursive;
+  color: white; }
+
+.bouton:hover {
+  background-color: white;
+  color: #3851D0;
+  height: 30px;
+  font-size: 20px;
+  border: solid 1px #3851D0;
+  border-radius: 5px; }
+
+.corps {
+  padding-top: 3%; }
+
+.liste {
+  border: solid 1px #969DC1;
+  height: 400px;
+  overflow-y: scroll;
+  border-radius: 10px;
+  background-color: #B9BED7; }
+
+.ajout {
+  height: 400px;
+  font-size: 30px;
+  color: #3851D0;
+  font-family: "Baloo Bhaina", cursive; }
+
+.plus {
+  width: 100px;
+  height: 80px; }
+
+.tache {
+  height: 200px;
+  border: solid 1px #3851D0;
+  margin: 1%;
+  border-radius: 10px;
+  background-color: white; }
+
+.niveaux {
+    height: 400px;
+    border: 1px solid #3851D0;
+    border-radius: 10px;
+    margin-top: 3%;
+    overflow-y: scroll;
+}
+/*# sourceMappingURL=appli-taches-Thibault-Defrance.css.map */
