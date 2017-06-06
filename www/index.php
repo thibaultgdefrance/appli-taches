@@ -1,3 +1,7 @@
+<?php
+    require "function.php";
+
+ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,12 +22,7 @@
                         <p>Accueil</p>
                     </div>
                 </a>
-                <a href="edit.html">
-                    <div class="col-md-1 col-md-offset-1 bouton">
-                        <p>edit</p>
-                    </div>
-                </a>
-                <a href="new.html">
+                <a href="new.php">
                     <div class="col-md-1 col-md-offset-1 bouton">
                         <p>new</p>
                     </div>
@@ -33,7 +32,7 @@
                         <p>tache(s) accomplie(s)</p>
                     </div>
                 </a>
-                <a href="niveaux.html">
+                <a href="niveaux.php">
                     <div class="col-md-2 col-md-offset-1 bouton">
                         <p>niveaux</p>
                     </div>
@@ -45,12 +44,19 @@
                 <div class="col-md-7 col-md-offset-1 liste">
                     <div class="row">
                         <div class="col-md-10 tache">
-                            <p>tache 1</p>
-                            <p>détails:</p>
-                            <p>deadline:</p>
-                            <p>importance:</p>
-                            <INPUT type="checkbox" name="nom" value="valeur attachée au bouton">
-                            <p>terminée</p>
+
+                            <?php
+                                $task = getTask();
+                                   foreach ($tasks as $task) {
+                                       ?>
+                                       <h2><?php echo $task['name'] ?></h2>
+                                       <h2><?php echo $task['deadline'] ?></h2>
+                                       <h2><?php echo $task['level_id'] ?></h2>
+                                       <h2><?php echo $task['poids'] ?></h2>
+                                       <p><?php echo $task['detail'] ?></p>
+                                       <?php
+                                   }
+                            ?>
                         </div>
                         <div class="col-md-10 tache">
                             <p>tache 1</p>
@@ -59,6 +65,10 @@
                             <p>importance:</p>
                             <INPUT type="checkbox" name="nom" value="valeur attachée au bouton">
                             <p>terminée</p>
+                            <a href="new.html">
+                                <button type="button" name="edit">edit</button>
+                            </a>
+                            <button type="delete" name="delete">delete</button>
                         </div>
                         <div class="col-md-10 tache">
                             <p>tache 1</p>
@@ -67,6 +77,10 @@
                             <p>importance:</p>
                             <INPUT type="checkbox" name="nom" value="valeur attachée au bouton">
                             <p>terminée</p>
+                            <a href="new.html">
+                                <button type="button" name="edit">edit</button>
+                            </a>
+                            <button type="delete" name="delete">delete</button>
                         </div>
                         <div class="col-md-10 tache">
                             <p>tache 1</p>
@@ -75,6 +89,10 @@
                             <p>importance:</p>
                             <INPUT type="checkbox" name="nom" value="valeur attachée au bouton">
                             <p>terminée</p>
+                            <a href="new.html">
+                                <button type="button" name="edit">edit</button>
+                            </a>
+                            <button type="delete" name="delete">delete</button>
                         </div>
                         <div class="col-md-10 tache">
                             <p>tache 1</p>
@@ -83,6 +101,10 @@
                             <p>importance:</p>
                             <INPUT type="checkbox" name="nom" value="valeur attachée au bouton">
                             <p>terminée</p>
+                            <a href="new.html">
+                                <button type="button" name="edit">edit</button>
+                            </a>
+                            <button type="delete" name="delete">delete</button>
                         </div>
 
                     </div>
